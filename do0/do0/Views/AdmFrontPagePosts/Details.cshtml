@@ -1,0 +1,114 @@
+﻿@model do0.Models.FrontPagePosts
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FrontPagePosts</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.do0AvatarName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.do0AvatarName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.do0UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.do0UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rascunho)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rascunho)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Autor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Autor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Introducao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Introducao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pasta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pasta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LinkExterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LinkExterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LinkUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LinkUrl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Reserva1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reserva1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.do0FrontPagePostsId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

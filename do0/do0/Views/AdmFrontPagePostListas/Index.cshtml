@@ -1,0 +1,105 @@
+﻿@model IEnumerable<do0.Models.FrontPagePostLista>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FrontPagePosts.do0AvatarName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.do0AvatarName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.do0UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rascunho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Autor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Data)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Introducao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pasta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkExterno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkUrl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Reserva1)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FrontPagePosts.do0AvatarName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.do0AvatarName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.do0UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rascunho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Autor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Data)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titulo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Introducao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pasta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkExterno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkUrl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Reserva1)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FrontPagePostListaId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FrontPagePostListaId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FrontPagePostListaId })
+        </td>
+    </tr>
+}
+
+</table>
