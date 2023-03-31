@@ -183,6 +183,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="BLL\FrontPagePostsBLL.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdmFrontPagePostListasController.cs" />
     <Compile Include="Controllers\AdmFrontPagePostsController.cs" />
@@ -194,10 +195,10 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\dbContext.cs" />
     <Compile Include="Models\do0DbInicializador1.cs" />
-    <Compile Include="Models\FrontPageEntityADO\AbstractRepository.cs" />
-    <Compile Include="Models\FrontPageEntityADO\FrontPagePostADORepository.cs" />
-    <Compile Include="Models\FrontPageEntityADO\FrontPagePostLista.cs" />
-    <Compile Include="Models\FrontPageEntityADO\FrontPagePosts.cs" />
+    <Compile Include="Models\FrontPageEntityFluentApi\AbstractRepository.cs" />
+    <Compile Include="Models\FrontPageEntityFluentApi\FrontPagePostADORepository.cs" />
+    <Compile Include="Models\FrontPageEntityFluentApi\FrontPagePostLista.cs" />
+    <Compile Include="Models\FrontPageEntityFluentApi\FrontPagePosts.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -224,13 +225,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\FrontPageEntityADO\T-SQL\FrontPagePostComponentesCreateTable.sql" />
-    <Content Include="Models\FrontPageEntityADO\T-SQL\FrontPagePostContentCreateTable.sql" />
-    <Content Include="Models\FrontPageEntityADO\T-SQL\FrontPagePostListasCreateTable.sql" />
-    <Content Include="Models\FrontPageEntityADO\T-SQL\FrontPagePostListasDropCreateTable.sql" />
-    <Content Include="Models\FrontPageEntityADO\T-SQL\FrontPagePostsCreateTable.sql" />
-    <Content Include="Models\FrontPageEntityADO\T-SQL\FrontPagePostsDropCreateTable.sql" />
-    <Content Include="Models\FrontPageEntityADO\T-SQL\FrontPagePostTitulosCreateTable.sql" />
+    <Content Include="Models\FrontPageEntityFluentApi\T-SQL\FrontPagePostComponentesCreateTable.sql" />
+    <Content Include="Models\FrontPageEntityFluentApi\T-SQL\FrontPagePostContentCreateTable.sql" />
+    <Content Include="Models\FrontPageEntityFluentApi\T-SQL\FrontPagePostListasCreateTable.sql" />
+    <Content Include="Models\FrontPageEntityFluentApi\T-SQL\FrontPagePostListasDropCreateTable.sql" />
+    <Content Include="Models\FrontPageEntityFluentApi\T-SQL\FrontPagePostsCreateTable.sql" />
+    <Content Include="Models\FrontPageEntityFluentApi\T-SQL\FrontPagePostsDropCreateTable.sql" />
+    <Content Include="Models\FrontPageEntityFluentApi\T-SQL\FrontPagePostTitulosCreateTable.sql" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Views\AdmFrontPagePosts\Create.cshtml" />
@@ -314,7 +315,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Bll\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
